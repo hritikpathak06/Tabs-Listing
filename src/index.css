@@ -92,6 +92,7 @@
   height: 100%;
   /* background-color: green; */
   width: 25%;
+  border-radius: 30px;
 }
 
 .main_box > .box > .box_image {
@@ -99,6 +100,7 @@
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .tab_img {
@@ -129,15 +131,20 @@
   position: relative;
 }
 
+.right_box{
+  border-radius: 30px;
+}
+
 .right_box1 {
   position: absolute;
   height: 15vh;
   width: 10vw;
   background-color: blueviolet;
-  top: 30%;               /* Position from the top at 50% */
-  left: -80px;           /* Position it on the left border */
-  transform: translateY(-40%); /* Center it vertically */
+  top: 30%;
+  left: -80px;
+  transform: translateY(-40%);
   z-index: 1000;
+  border-radius: 30px;
 }
 
 .right_box2 {
@@ -145,10 +152,11 @@
   height: 15vh;
   width: 10vw;
   background-color: red;
-  top: 80%;               /* Position from the top at 50% */
-  right: 0;         /* Position it on the left border */
-  transform: translateY(-40%); 
+  top: 80%;
+  right: 0;
+  transform: translateY(-40%);
   z-index: 1000;
+  border-radius: 30px;
 }
 
 .right_box3 {
@@ -156,17 +164,19 @@
   height: 15vh;
   width: 10vw;
   background-color: red;
-  top: 0;               /* Position from the top at 50% */
-  right: 0;         /* Position it on the left border */
-  transform: translateY(-40%); 
+  top: 0;
+  right: 0;
+  transform: translateY(-40%);
   z-index: 1000;
+  border-radius: 30px;
 }
 
-.right_image_container > .right_box >  .box_image{
+.right_image_container > .right_box > .box_image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .absolute_img {
@@ -200,4 +210,70 @@
   width: 80vw;
   height: auto;
   z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading_container {
+    /* background-color: orange; */
+    width: 100%;
+  }
+  .heading_container > p {
+    padding: 10px;
+  }
+  .tabs_container {
+    width: 100%;
+    padding: 10px;
+  }
+  .image_container {
+    /* background-color: greenyellow; */
+    width: 100%;
+    padding: 20px;
+    height: max-content;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .center_image_container {
+    display: none;
+  }
+  .left_image_container {
+    width: 100%;
+    height: 50vh;
+  }
+  .right_image_container {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .right_box1 {
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    background-color: blueviolet;
+    top: 30%;
+    left:0;
+    transform: translateY(-40%);
+    z-index: 1000;
+  }
+
+  .right_box2 {
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    background-color: blueviolet;
+    top: 80%;
+    right:0;
+    transform: translateY(-40%);
+    z-index: 1000;
+  }
+
+  .right_box3 {
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    background-color: blueviolet;
+    top: 10%;
+    right:0;
+    transform: translateY(-40%);
+    z-index: 1000;
+  }
 }
