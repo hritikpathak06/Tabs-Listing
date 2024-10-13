@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+  flex-direction: column;
+}
+
+.heading_container {
+  /* background-color: blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+}
+
+.heading_container > h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.heading_container > p {
+  font-size: 13px;
+  text-align: center;
+  color: gray;
+}
+
+.tabs_container {
+  height: 8vh;
+  /* background-color: orange; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs_container > ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs_container > ul > li > button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.image_container {
+  height: 60vh;
+  width: 80%;
+  /* background-color: greenyellow; */
+  display: flex;
+  margin-top: 2rem;
+}
+
+.left_image_container {
+  height: 100%;
+  width: 40%;
+  position: relative;
+  /* background-color: blue; */
+}
+
+.main_box {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  /* background-color: purple; */
+  height: 20vh;
+  z-index: 10000;
+  display: flex;
+  gap: 5;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main_box > .box {
+  height: 100%;
+  /* background-color: green; */
+  width: 25%;
+}
+
+.main_box > .box > .box_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.tab_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.center_image_container {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+}
+
+.center_img {
+  height: 100px;
+  width: 100px;
+  z-index: 1000;
+  position: relative;
+}
+
+.right_image_container {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+.right_box1 {
+  position: absolute;
+  height: 15vh;
+  width: 10vw;
+  background-color: blueviolet;
+  top: 30%;               /* Position from the top at 50% */
+  left: -80px;           /* Position it on the left border */
+  transform: translateY(-40%); /* Center it vertically */
+  z-index: 1000;
+}
+
+.right_box2 {
+  position: absolute;
+  height: 15vh;
+  width: 10vw;
+  background-color: red;
+  top: 80%;               /* Position from the top at 50% */
+  right: 0;         /* Position it on the left border */
+  transform: translateY(-40%); 
+  z-index: 1000;
+}
+
+.right_box3 {
+  position: absolute;
+  height: 15vh;
+  width: 10vw;
+  background-color: red;
+  top: 0;               /* Position from the top at 50% */
+  right: 0;         /* Position it on the left border */
+  transform: translateY(-40%); 
+  z-index: 1000;
+}
+
+.right_image_container > .right_box >  .box_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.absolute_img {
+  position: absolute;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs_img {
+  width: 250px;
+  height: 100px;
+}
+
+.active {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.circular_line_container {
+  position: relative;
+  display: inline-block;
+}
+
+.circular_svg {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: auto;
+  z-index: -1;
+}
